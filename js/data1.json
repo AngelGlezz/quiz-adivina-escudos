@@ -1,0 +1,199 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "1",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Ame1.png'>",
+          "tipo": "true"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Ame2.png'>",
+          "tipo": "false"
+        }
+      ]
+    },
+    {
+      "pregunta": "2",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Atlas1.png'>",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Atlas2.png'>",
+          "tipo": "true"
+        }
+      ]
+    },
+    {
+      "pregunta": "3",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Chiapas1.png'>",
+          "tipo": "true"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Chiapas2.png'>",
+          "tipo": "false"
+        }
+      ]
+    },
+    {
+      "pregunta": "4",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Chivas2.png'>",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Chivas1.png'>",
+          "tipo": "true"
+        }
+      ]
+    },
+    {
+      "pregunta": "5",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/CruzAzul1.png'>",
+          "tipo": "true"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/CruzAzul2.png'>",
+          "tipo": "false"
+        }
+      ]
+    },
+    {
+      "pregunta": "6",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Gallos2.png'>",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Gallos1.png'>",
+          "tipo": "true"
+        }
+      ]
+    },
+    {
+      "pregunta": "7",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Monarcas2.png'>",
+          "tipo": "true"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Monarcas1.png'>",
+          "tipo": "false"
+        }
+      ]
+    },
+    {
+      "pregunta": "8",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Monterrey2.png'>",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Monterrey1.png'>",
+          "tipo": "true"
+        }
+      ]
+    },
+    {
+      "pregunta": "9",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Pachuca2.png'>",
+          "tipo": "true"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Pachuca1.png'>",
+          "tipo": "false"
+        }
+      ]
+    },
+    {
+      "pregunta": "10",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Puebla2.png'>",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Puebla1.png'>",
+          "tipo": "true"
+        }
+      ]
+    },
+    {
+      "pregunta": "11",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Pumas1.png'>",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Pumas2.png'>",
+          "tipo": "true"
+        }
+      ]
+    },
+    {
+      "pregunta": "12",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Santos1.png'>",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Santos2.png'>",
+          "tipo": "true"
+        }
+      ]
+    },
+    {
+      "pregunta": "13",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Tigres1.png'>",
+          "tipo": "true"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Tigres2.png'>",
+          "tipo": "false"
+        }
+      ]
+    },
+    {
+      "pregunta": "14",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Toluca1.png'>",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Toluca2.png'>",
+          "tipo": "true"
+        }
+      ]
+    },
+    {
+      "pregunta": "15",
+      "respuestas": [
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Xolos2.png'>",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "<img class='option' src='images/respuestas/Xolos1.png'>",
+          "tipo": "true"
+        }
+      ]
+    }
+  ]
+}
