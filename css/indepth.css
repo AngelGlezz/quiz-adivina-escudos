@@ -510,19 +510,6 @@
 	font-style: italic;
 }
 
-#indepth_twittear{
-	width: 50px;
-	height: 50px;
-	background-image: url(../images/Twitter.png);
-	cursor: pointer;
-	margin: auto;
-	background-size: contain;
-}
-
-#indepth_twittear:hover{
-	opacity: .8;
-}
-
 .indepth_pregunta_t{
 	font-family: 'Roboto';
 	font-size: 28px;
@@ -564,13 +551,6 @@
 	display: table;
 }
 
-#dominos_resultado {
-	width: 227px;
-	height: 60px;
-	position: relative;
-	margin: auto;
-}
-
 .indepth_result_cont {
     width: 645px;
     height: 215px;
@@ -579,29 +559,59 @@
 }
 
 .indepth_result_container{
-	color: white;
+	width: 98%;
 	display: table-cell;
 	vertical-align: middle;
 	font-family: 'Open Sans', sans-serif;
-}
-
-.indepth_result_title{
-	font-size: 22px;
-	font-weight: 500;
-	font-style: italic;
-}
-
-.indepth_result_text{
-	font-style: italic;
-	font-size: 16px;
+	font-size: 29px;
+	opacity: 0.8;
 	padding: 10px;
+	position: absolute;
 }
 
-.indepth_pronostico_cont{
-	border: 2px solid #fff;
-	width: 600px;
-	margin: 40px auto;
-	padding: 50px 20px;
+#social_media {
+	width: 110px;
+	margin: 0px auto;
+	overflow: auto;
+	margin-top: 135px;
+}
+
+#indepth_twittear {
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/Twitter.png);
+	cursor: pointer;
+	background-size: contain;
+	float: right;
+}
+
+#indepth_facebook {
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/Facebook.png);
+	cursor: pointer;
+	margin: auto;
+	background-size: contain;
+	float: left;
+}
+
+#indepth_twittear:hover{
+	opacity: .6;
+}
+
+#indepth_facebook:hover{
+	opacity: .6;
+}
+
+#container_result {
+	width: 100%;
+	height: 200px;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
 }
 
 #indepth_return{
@@ -668,11 +678,25 @@
 	margin: auto;
 }
 
+/*** Movil ****/
+
+/*  poner cuando sea quiz  */
+#mBanner{ display:none;}
+#mFooter{ display:none;}
+#mContentWide .articles{ display:none;}
+/*  poner cuando sea quiz  */
+
 @media screen and (min-width: 2341px) {
 	#indepth_footer .indepth_text{
 		text-align:left;
 		margin-left: -300px;
 	}
+}
+
+/* mobile adecuations */
+
+@media screen and (max-width: 1960px) {
+	min-width: 800px;
 }
 
 /*** Movil ****/
@@ -687,8 +711,29 @@
 		display: none;
 	}
 	
-	#indepth_resultados{
-		background-position: 65% 50%;
+	.inner {
+	    width: 96%;
+	}
+
+	.indepth_result_container {
+		width: 94%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (max-height: 768px){
+	.indepth_parallax_back{
+		background-attachment: initial;
+	}
+
+	#presentado {
+	    width: 400px;
+	    margin-bottom: -25px;
+	}	
+}
+
+@media screen and (max-width: 950px) {
+	#indepth_resultados {
+		background-size: 185%;
 	}
 }
 
@@ -697,33 +742,13 @@
 		margin: 0 auto;
 	}
 	
-	.indepth_pregunta_item{
-		max-width: 600px;
-    	width: 86%; 
-	}	
-	
-	.indepth_respuestas_cont{
-		margin-left: 0px;
-		margin-top: 20px;
-		height: auto;
-	}
-	
 	.indepth_pregunta_cont{
 		width: 600px;
-	}
-	
-	.indepth_respuesta_item{
-		width: 350px;
-		height: auto;
-	    float: none;
-	    padding: 0px;
-	    line-height: 0px;
 	}
 	
 	.indepth_boton{
 		float: none;
 	}
-	
 
 	#indepth_page6 {
 	  background-position: 80% 50%;
@@ -733,26 +758,18 @@
 	  background-position: 10% 50%;
 	}
 	
-	#indepth_resultados {
-	  background-position: 70% center;
-	}
-	
 	#content_page1_title {
 	    width: 70%;
 	    position: relative;
 	    margin: auto;
 	}
+	.inner {
+		top: 200px;
+	}
 		
 }
 
 @media screen and (max-width: 640px) {
-	
-	.indepth_result_cont{
-		width: 450px;
-		height: 210px;
-		margin: auto;
-	}
-	
 	.indepth_pronostico_cont{
 		width: 450px;
 		padding: 30px 20px;
@@ -763,24 +780,28 @@
 	    position: relative;
 	    margin: auto;
 	}
-	
-	#dominos img {
-		width: 75%;
-	}
-
-	#dominos {
-		top: 9px;
-	}
-
 }
 
-@media screen and (max-width: 550px) {
-	
-	.indepth_result_cont{
-		width: 360px;
-		height: 100px;
+@media screen and (max-width: 590px) {
+	.indepth_result_container {
+		font-size: 17px;
 	}
-	
+
+	#container_result {
+		height: 150px;
+	}
+
+	#social_media {
+		margin-top: 90px;
+	}
+
+	#container_result {
+		top: 0px;
+		bottom: none;
+	}
+}
+
+@media screen and (max-width: 575px) {
 	#content_page1_title {
 	    width: 95%;
 	    position: relative;
@@ -804,34 +825,22 @@
 	    padding: 10px;
 	}
 
-	#juan {
-	    width: 400px;
-	    max-width: 600px;
-	    margin-bottom: -209px;
+	.indepth_respuesta_item {
+	    width: 100%;
 	}
 
+	.indepth_pregunta_main {
+		width: 310px;
+		height: auto;
+		margin: auto;
+	}
+
+	.indepth_respuesta_item {
+	    width: 46%;
+	}
 }
 
 @media screen and (max-width: 400px) {
-	
-	.indepth_result_cont{
-		width: 300px;
-		height: auto;
-	}
-	
-	.indepth_pronostico_cont{
-		width: 300px;
-		padding: 20px 10px;
-	}
-	
-	.indepth_result_title{
-		font-size: 14px;
-	}
-	
-	.indepth_result_text{
-		font-size: 13px;
-	}
-	
 	.indepth_pronostico_pregunta_text{
 		font-size: 16px;
 	}
@@ -844,33 +853,9 @@
 		height: 25px;
 		line-height: 25px;
 	}
-
-	#juan {
-	    width: 360px;
-	    max-width: 600px;
-	    margin-bottom: -220px;
-	}
 }
 
 @media screen and (max-width: 605px) {
-	.indepth_media_cont{
-	width:300px;display:table;margin:auto;margin-bottom:20px;margin-top: 20px;
-	}
-
-	.indepth_quote_side{
-		font-size:21px;width:100%;margin:0px;margin-bottom: 15px;padding: 0px;
-		float: left;
-	}
-
-	.indepth_image_side{
-		width:100%;margin:0px;
-		float: left;
-	}
-
-	.indepth_image_side img{
-		width: 100%;
-	}
-
 	#indepth_cover{
 		height: 650px;
 	}
@@ -879,66 +864,11 @@
 		background-attachment: initial;
 	}
 }
-	
+
 @media screen and (max-width: 375px) {
-	.indepth_pregunta_img{
-		width: 280px;
-		height: auto;
-		background: none;
-	}
-	
-	.indepth_pregunta_img img{
-		width: 100%;
-	}
-	
-	.indepth_respuesta_item {
-	    width: 265px;
-	}
-	
-	.indepth_respuestas_cont{
-		width: auto;
-	}
-	
-	.indepth_pronostico_cont {
-	    width: 260px;
-	    padding: 10px 10px;
-	}
-	
-	.indepth_result_cont{
-		width: 280px;
-	}
-	
 	#indepth_resultados{
 		display: block;
 	}
-	
-	.indepth_resultado_lo{
-		margin: 20px auto ; 
-		display: block;
-	}
-
-	#dominos img {
-    	width: 55%;
-	}
-
-	.indepth_result_cont {
-	    width: 300px;
-	}
-
-	.indepth_result_title {
-    	font-size: 14px;
-	}
-
-	.indepth_result_text {
-    	font-size: 12px;
-	}
-
-	#juan {
-	    width: 340px;
-	    max-width: 600px;
-	    margin-bottom: -248px;
-	}
-
 }
 
 @media screen and (max-height: 750px) {
@@ -951,10 +881,11 @@
 		color: #cbb400;
 		background: #fff;
 	}
-	
-	#juan{
-		max-width: 310px;
-		margin-bottom: -161px;
+
+	#logo{
+		height: auto;
+		max-width: 300px;
+		margin-bottom: 25px;
 	}
 }
 
@@ -962,57 +893,18 @@
 	#header{
 		display: none;
 	}
-	.indepth_publica{
-		position: inherit;
-		color: white;
-		margin-top: 20px;
-		font-size: 14px;
-		bottom: 10px;
-		left: 20px;
-		font-weight: 300;
-	}
-
-	.indepth_lo_quiero_cont{
-		bottom: 60px;
-	}
 	
 	#indepth_cover{
 		height: 540px;	
-	}
-	
-	.indepth_image_tenis{
-		width: 90%;
-		height: 200px;
-	}
-	
-	.indepth_tenis_text{
-		width: 90%;
-	}
-	
-	.indepth_concurso_text{
-		font-size: 16px;
-	}
-
-	.indepth_tenis_title{
-		font-size: 22px;
 	}
 
 	.indepth_pregunta{
 		font-size: 22px;
 	}
 
-	#juan{
-		max-width: 300px;
-		margin-bottom: -50px;
-	}
-		
-	#indepth_portada_text{
-		font-size: 16px;
+	#logo{
 		margin-bottom: 10px;
-	}
-
-	.indepth_result_cont {
-	    width: 300px;
+		width: 300px;
 	}
 }
 
@@ -1026,10 +918,12 @@
 	    position: relative;
 	    margin: auto;
 	}
-}
 
-@media screen and (max-width: 1024px) and (max-height: 768px){
-	.indepth_parallax_back{
-		background-attachment: initial;
+	#indepth_resultados {
+		background-position: 50% 10%;
+	}
+
+	.inner {
+		margin-top: 0px;
 	}
 }

@@ -70,12 +70,12 @@ $("#indepth_boton_empezar").on("click",function(){
 				      "pregunta": "Atlas",
 				      "respuestas": [
 				        {
-				          "respuesta": "<img class='option' src='images/respuestas/Atlas1.png'>",
-				          "tipo": "true"
-				        },
-				        {
 				          "respuesta": "<img class='option' src='images/respuestas/Atlas2.png'>",
 				          "tipo": "false"
+				        },
+				        {
+				          "respuesta": "<img class='option' src='images/respuestas/Atlas1.png'>",
+				          "tipo": "true"
 				        }
 				      ]
 				    },
@@ -109,12 +109,12 @@ $("#indepth_boton_empezar").on("click",function(){
 				      "pregunta": "Brasil",
 				      "respuestas": [
 				        {
-				          "respuesta": "<img class='option' src='images/respuestas/Brasil1.png'>",
-				          "tipo": "true"
-				        },
-				        {
 				          "respuesta": "<img class='option' src='images/respuestas/Brasil2.png'>",
 				          "tipo": "false"
+				        },
+				        {
+				          "respuesta": "<img class='option' src='images/respuestas/Brasil1.png'>",
+				          "tipo": "true"
 				        }
 				      ]
 				    },
@@ -148,12 +148,11 @@ $("#indepth_boton_empezar").on("click",function(){
 				      "pregunta": "Real Madrid",
 				      "respuestas": [
 				        {
-				          "respuesta": "<img class='option' src='images/respuestas/Real2.png'>",
-				          "tipo": "true"
-				        },
-				        {
 				          "respuesta": "<img class='option' src='images/respuestas/Real1.png'>",
 				          "tipo": "false"
+				        },{
+				          "respuesta": "<img class='option' src='images/respuestas/Real2.png'>",
+				          "tipo": "true"
 				        }
 				      ]
 				    },
@@ -306,8 +305,13 @@ function finish_test(){
 		});
   	}
   	
-  	$("#indepth_aciertos_text").html(msg);
-  	$("#tipo_aficionado").html(aficionado);
+  	$(".indepth_result_container").html(msg);
+
+	$("#indepth_resultados").animate({
+	  	"left": 0
+  	},2000, function(){
+	  	$("html, body, #indepth_page1").css("overflow","hidden");
+  	});
 
   	$("#indepth_twittear").click(function(){
   		var text = "";
