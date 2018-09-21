@@ -693,22 +693,10 @@
 	}
 }
 
-/* mobile adecuations */
-
-@media screen and (max-width: 1960px) {
-	min-width: 800px;
-}
-
-/*** Movil ****/
-
 @media screen and (max-width:1024px) {
 	body{
 		width: 100%;
 		min-width: 0px;
-	}
-	
-	.vimeoFrame{
-		display: none;
 	}
 	
 	.inner {
@@ -724,11 +712,6 @@
 	.indepth_parallax_back{
 		background-attachment: initial;
 	}
-
-	#presentado {
-	    width: 400px;
-	    margin-bottom: -25px;
-	}	
 }
 
 @media screen and (max-width: 950px) {
